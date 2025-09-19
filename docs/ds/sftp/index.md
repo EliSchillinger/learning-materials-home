@@ -10,7 +10,7 @@ This guide covers how to configure SFTP clients to efficiently manage your data 
 
 **Using SFTP for File Transfers**
 
-WebDAV is ideal for transferring small files or small collections of files. While there is no strict size limit, it is not recommended for files larger than 10 GiB due to performance issues.
+SFTP is ideal for transferring small files or small collections of files. While there is no strict size limit, it is not recommended for files larger than 10 GiB due to performance issues.
 
 **Alternatives for Large Files**
 
