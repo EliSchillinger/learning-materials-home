@@ -1,6 +1,6 @@
 # General Configuration for AI Verde Data Store MCP Server
 
-This document provides details of configuration information of the AI Verde Data Store MCP Server.
+This guide provides the necessary configuration details for using the AI Verde Data Store MCP Server
 
 ## MCP Server Host Information
 
