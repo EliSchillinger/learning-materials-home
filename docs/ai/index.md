@@ -43,6 +43,10 @@ For large-scale AI/ML workloads, CyVerse offers access to powerful cloud resourc
 *   **Jetstream2:**  Jetstream2 provides access to NVIDIA A100 and H100 GPUs, ideal for demanding deep learning tasks.  Learn more at [https://jetstream-cloud.org](https://jetstream-cloud.org).
 *   **CyVerse CACAO:**  CACAO simplifies the deployment of complex AI/ML applications on cloud platforms. It provides pre-built templates for deploying various AI/ML Web UIs, vector databases, and interactive applications, all backed by GPU resources.
 
+### Access CyVerse Data Store from AI Agents
+
+To access research datasets stored in CyVerse Data Store via AI Agents or other AI workloads, CyVerse offers the Data Store MCP Server. Learn how to configure your agents or workloads at [**MCP**](mcp).
+
 **Getting Started with Cloud Resources:**
 
 1.  Create an account on [ACCESS-CI.org](https://access-ci.org).
