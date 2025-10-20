@@ -91,7 +91,7 @@ nav:
   - 'Artificial Intelligence':
     - ai/index.md
     - 'VERDE': ai/verde.md
-    - 'MCP Servers': ai/mcp.md
+    - 'MCP Servers': ai/mcp/index.md
   - 'Education':
     - edu/index.md
     - 'Workshops':
