@@ -14,7 +14,7 @@ This document provides example configurations for setting up the remote AI Verde
 
 Edit the `~/.config/Code/User/mcp.json` file.
 
-Configure VS Code to use remote AI Verde Data Store MCP Server with Streamable-HTTP. Paste the following into your `mcp.json` file.
+Configure VS Code to use the AI Verde Data Store MCP Server with Streamable-HTTP. Paste the following into your `mcp.json` file.
 
 This configuration allows access only to public data located at `/iplant/home/shared`.
 
@@ -29,9 +29,9 @@ This configuration allows access only to public data located at `/iplant/home/sh
 }
 ```
 
-Go to `View` → `Chat` and click wrench icon in the chat box. Expand `MCP Server: ai-verde-datastore` and click `Update Tools`.
+Go to `View` → `Chat` and click the wrench icon in the chat box. Expand `MCP Server: public-ai-verde-datastore` and click `Update Tools`.
 
-Accept adding a MCP server and opening a new popup for login. Follow the instruction in the UI.
+Accept adding the MCP server and opening a new popup for logging-in. Follow the instructions in the UI.
 
 ### b. Configure MCP Server with CyVerse Account
 
@@ -46,14 +46,14 @@ Accept adding a MCP server and opening a new popup for login. Follow the instruc
 }
 ```
 
-Go to `View` → `Chat` and click wrench icon in the chat box. Expand `MCP Server: ai-verde-datastore` and click `Update Tools`.
+Go to `View` → `Chat` and click the wrench icon in the chat box. Expand `MCP Server: ai-verde-datastore` and click `Update Tools`.
 
-Accept adding a MCP server and opening a new popup for login. Follow the instruction in the UI.
+Accept adding the MCP server and opening a new popup for logging-in. Follow the instructions in the UI.
 
-VS Code will ask you for entering OAuth client ID and secret.
+VS Code will ask you to enter an OAuth client ID and secret.
 
 - Client ID: `mcp-client`
-- Client Secret: `<empty>` **leave it empty, we don't have it**
+- Client Secret: `<empty>` **(leave it empty, as one is not required)**
 
 
 ## 2. Verify Connection 
