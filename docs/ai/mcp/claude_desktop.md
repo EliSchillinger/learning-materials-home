@@ -19,7 +19,8 @@ This guide shows how to connect Claude Desktop to the remote AI Verde Data Store
 Fill in the fields:
 
 - Name: `AI-Verde Datastore`
-- URL: `https://mcp.cyverse.ai/mcp`
+- URL (full access): `https://mcp.cyverse.ai/mcp`
+- URL (anonymous public data access): `https://mcp-public.cyverse.ai/mcp`
 
 Click the `Save` button.
 
