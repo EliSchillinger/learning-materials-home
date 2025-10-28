@@ -3,6 +3,7 @@
 This guide shows how to connect Claude Desktop to the AI Verde Data Store MCP server over Streamable-HTTP using the Connectors UI.
 
 ## Prerequisites
+
 - Claude Desktop installed
 - Claude Pro plan (free plan users cannot add new connectors)
 - CyVerse account credentials (if not using anonymous access)
@@ -28,12 +29,14 @@ Click the `Save` button.
 ### b. Full Access with CyVerse Account
 
 Fill in the fields:
+
 - Name: `AI-Verde Data Store`
 - URL (full access): `https://mcp.cyverse.ai/mcp`
 
 Click the `Save` button.
 
 When adding `https://mcp.cyverse.ai/mcp`, you will be prompted for the following information to log in.
+
 - Client ID: `mcp-client`
 - Client Secret: `<empty>` **(leave it empty, as one is not required)**
 

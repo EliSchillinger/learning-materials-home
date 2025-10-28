@@ -27,7 +27,11 @@ If no user credentials are passed through the HTTP `Authorization` header, you w
 
 HTTP Basic Auth is a traditional but less secure way to authenticate. In this method, your CyVerse user account credentials must be passed via the HTTP `Authorization` header.
 
-To fill the `Authorization` header, use the following format: `Basic <your_base64_encoded_credentials>`.
+To fill the `Authorization` header, use the following format: 
+
+```
+Basic <your_base64_encoded_credentials>.
+```
 
 You first need to generate the Base64-encoded credential string. Use your CyVerse username (e.g., `foo`) and password (e.g., `mypassword`), separated by a colon (`:`), with the following terminal command:
 ```bash
