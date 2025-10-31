@@ -1,82 +1,80 @@
-# Manage Your Data with the Data Store
+# Data Store
 
 <figure markdown>
   ![!ds](../assets/ds/datastore_plchldr.png){ width="200" }
 </figure>
 
-The CyVerse Data Store is a platform for storing, managing, and sharing your data across the full data lifecycle. The Data Store crosscuts, and is accessible from, all CyVerse platforms. Data Store features are designed to help you follow a number of practices to ensure that the integrity and value of your data are maintained and to make your data more FAIR (Findable, Accessible, Interoperable, and Reusable) with less effort. 
+CyVerse Data Store runs the [Integrated Rule-Oriented Data System (iRODS)](https://irods.org){target=_blank} Open Source Data Management Software.
 
-This guide will cover the minimum needed to get you started. It assumes you have created a CyVerse account already. 
+iRODS helps researchers, archivists, and others manage large, geographically dispersed computer files by providing a virtual filesystem, metadata catalog, and a rule engine to automate data management and enforce policies. 
 
----
+The Data Store is designed for storing, managing, and sharing your data throughout its entire lifecycle. 
 
-### Table of Contents
+Integrated across all CyVerse platforms, the Data Store has high accessibility and connectivity.  
 
-1. [Move Data](move_data)
-    - [Transfer Data with Discovery Environment](../de/manage_data)
-    - [Transfer Data with Cyberduck](cyberduck)
-    - [Transfer Data with iCommands on Command Line](icommands)
-    - [Transfer Data with GoCommands on Command Line](gocommands)
-    - [HTTP(S) Access with WebDAV](webdav)
-    - [Transferring Data with SFTP](sftp)
-2. [Add Metadata](metadata)
-3. [Share Data](share)
-4. [Get a DOI](doi)
-5. [Check Data Storage Quotas](check_data)
-6. [Managing Data within a Team](teams)
+The Data Store's features are aimed at helping you maintain data integrity and value, while making your data more FAIR (Findable, Accessible, Interoperable, and Reusable) with minimal effort.
+
+This guide will walk you through the essential steps to get started, assuming you’ve already created a CyVerse account.
 
 ---
 
-## [![!ds](../assets/ds/datastore_plchldr.png){width=30} Moving Data](move_data)
+# Data Management
 
-Learn how to move data to and from the CyVerse Data Store efficiently. This section covers various methods and tools you can use to transfer your data.
+There are several ways to access the Data Store. These methods vary in speed, flexibility, and technical knowledge required. Different methods may suit your needs for different projects at different times.
 
-## [![vice](../assets/de/logos/deviceIcon.png){width=25} Data Management with Discovery Environment](../de/manage_data)
+| Method                 | Access Point               | OS               | Upload/Download | Installation/Setup Required | Account Required         | Max File Size         |
+|------------------------|----------------------------|------------------|-----------------|-----------------------------|--------------------------|-----------------------|
+| Discovery Environment  | Web                        | Any              | Both            | No                          | Yes                      | 2GB/file upload, no limit for import |
+| WebDAV                 | Web & Command line         | Any              | Both            | No                          | Yes (No for public data) | No limit              |
+| GoCommands             | Command line               | Any              | Both            | Yes                         | Yes (No for public data) | No limit              |
+| iCommands              | Command line               | Linux & macOS    | Both            | Yes                         | Yes (No for public data) | No limit              |
+| SFTP                   | Desktop App & Command line | Any              | Both            | No (Yes for desktop app)    | Yes (No for public data) | No limit              |
 
-Explore the Discovery Environment (DE) for managing your data. This graphical user interface allows you to perform a variety of data management tasks without the need for command-line knowledge.
 
-## [:material-duck: Transferring Data with Cyberduck](cyberduck)
+This section covers each of the following data management methods:
 
-Cyberduck is a popular open-source client for transferring files. This section provides step-by-step instructions on using Cyberduck to transfer data to and from the CyVerse Data Store.
+1. [Discovery Environment](de): A comprehensive web-based platform for data analysis and management
+2. [GoCommands](gocommands): A lightweight, portable command-line tool for efficient data operations on any OS
+3. [iCommands](icommands): A powerful command-line suite for advanced data management tasks on Linux
+4. [SFTP](sftp): A secure file transfer protocol accessible via command-line or GUI applications on any OS
+5. [WebDAV](webdav): A protocol extending HTTP for collaborative file management over the internet, usable on any OS
 
-## [:octicons-terminal-16: Transferring Data with iCommands and Command Line](icommands)
+Additional resources for managing your data and team collaboration:
 
-For advanced users, iCommands offer a powerful way to manage data via the command line. Learn how to install and use iCommands for efficient data transfers and management.
+1. [Getting a DOI](de/doi.md): Obtain a Digital Object Identifier (DOI) for a permanent and stable link to your data
+2. [Checking Data Usage](de/check_data.md): Monitor your data usage and storage limits
+3. [Team Access Management](de/teams.md): Create and manage teams in the Data Store for collaborative work
 
-## [:simple-go: Transferring Data with GoCommands and Command Line](gocommands)
+---
 
-GoCommands provide another command-line tool for data transfer. This section explains how to set up and use GoCommands to interact with the CyVerse Data Store.
+## [:material-laptop: Manage Your Data in Discovery Environment](de)
 
-## [:material-web: HTTP Access with WebDAV](webdav)
+The Discovery Environment has a fully managed interface for uploading, downloading, sharing, and adding metadata to the Data Store through your browser.
 
-WebDAV allows you to access the CyVerse Data Store over HTTP. Discover how to configure and use WebDAV for seamless data access and management.
+## [:simple-go: Manage Your Data with GoCommands](gocommands)
+
+GoCommands is a lightweight and portable command-line tool designed for efficient data management within the Data Store. This section provides guidance on how to set up and use GoCommands to interact with the Data Store.
+
+## [:material-console: Manage Your Data with iCommands](icommands)
+
+iCommands is a powerful command-line tool designed for data management in iRODS. It enables you to manage data in the Data Store efficiently via the command line. This section covers how to install and use iCommands for streamlined data transfers and management.
 
 ## [:material-play-network: Transferring Data with SFTP](sftp)
 
-Secure File Transfer Protocol (SFTP) is a secure method for transferring data. Learn how to use SFTP to move your data to and from the CyVerse Data Store.
+SFTP (Secure File Transfer Protocol) is a widely adopted network protocol for secure file access, transfer, and management. This section explains how to use SFTP to move your data to and from the Data Store.
 
-## [:octicons-list-unordered-16: Adding Metadata](metadata)
+## [:material-web: HTTP Access with WebDAV](webdav)
 
-Metadata is crucial for data organization and retrieval. This section covers how to add and manage metadata for your data stored in the CyVerse Data Store.
+WebDAV (Web Distributed Authoring and Versioning) is a protocol built on top of HTTP/HTTPS, allowing users to manage data on web servers. This section demonstrates how to use WebDAV for seamless data access and management within the Data Store.
 
-## [:material-share-variant: Sharing Data](share)
+## [:simple-doi: Getting a DOI](doi.md)
 
-Collaboration is key in research. Learn how to share your data with colleagues and collaborators securely using the CyVerse Data Store.
+A Digital Object Identifier (DOI) offers a permanent and stable link to your data. Learn how to obtain a DOI for your datasets stored in the Data Store, ensuring long-term citation and accessibility.
 
-## [:simple-doi: Getting a DOI](doi)
+## [:material-magnify: Checking Data Storage](check_data.md)
 
-A Digital Object Identifier (DOI) provides a permanent link to your data. Find out how to obtain a DOI for your datasets stored in the CyVerse Data Store.
+Keep track of your data usage and storage limits. This section covers tools and techniques for monitoring your data storage within the Data Store.
 
-## [Checking Data Storage](check_data)
+## [:material-account-group: Managing Data within a Team](teams.md)
 
-Keep track of your data usage and storage limits. This section provides tools and tips for monitoring your data storage in the CyVerse Data Store.
-
-## [![team](../assets/de/menu_items/teamsIcon_2.svg){width=25} Teams](teams)
-
-Manage team access and permissions for your data. Learn how to create and manage teams within the CyVerse Data Store to facilitate collaborative work.
-
-We hope this documentation helps you in managing your data effectively. If you have any questions or need further assistance, please refer to our support resources or contact us directly.
-
-## Internal Documentation
-
-For internal documentation, please see the [Data Store Manual](https://cyverse.atlassian.net/wiki/spaces/DS/overview) for a more comprehensive look at Data Store capabilities.
+Efficiently manage team access and permissions for your data. Learn how to create and manage teams in the Data Store to facilitate collaborative data work.

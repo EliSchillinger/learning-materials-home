@@ -1,80 +1,118 @@
 # General site information
-site_name: CyVerse Learning Home
+site_name: CyVerse Learning Materials
 site_description: Documentation for CyVerse Platforms and Education
 site_author: CyVerse Science Team
 site_url: https://learning.cyverse.org
-
+copyright: Copyright © 2025 The Arizona Board of Regents
 # Repository information
 repo_name: CyVerse-learning-materials/learning-materials-home
 repo_url: https://github.com/CyVerse-learning-materials/learning-materials-home
 edit_uri: edit/main/docs
 
 # Footer
-copyright: 'Copyright &copy; 2024 CyVerse'
+copyright: 'Copyright &copy; 2025 CyVerse'
 
 # Navigation Page (merging both sets of navigation items)
 nav:
   - 'Home':
     - index.md
-    - 'What is CyVerse?': what_is_cyverse.md
-    - 'Self-Guided Tour': mooc.md
-    - 'Set Up an Account': account.md
-    - 'Getting Help': getting_help.md
-  - 'Manage Your Data':
+    - 'What is CyVerse?': home/what_is_cyverse.md
+    - 'Set Up an Account': home/account.md
+    - 'Subscriptions': home/subscriptions.md
+    - 'Powered by CyVerse': home/powered_by.md
+    # - 'FAQ': home/faq.md # needs to be updated
+    - 'Glossary': home/glossary.md
+  - 'Data Management':
     - ds/index.md
-    - 'Moving Data':
-      - ds/move_data/index.md
-      - 'Data Management with Discovery Environment': de/manage_data.md
-      - 'Transferring Data with Cyberduck': ds/cyberduck.md
-      - 'Transferring Data with iCommands and Command Line': ds/icommands.md
-      - 'Transferring Data with GoCommands and Command Line': ds/gocommands.md
-      - 'HTTP Access with WebDAV': ds/webdav.md
-      - 'Transferring Data with SFTP': ds/sftp.md
-    - 'Adding Metadata': ds/metadata.md
-    - 'Sharing Data': ds/share.md
-    - 'Getting a DOI': ds/doi.md
-    - 'Checking Data Storage': ds/check_data.md
-    - 'Teams': ds/teams.md
-  - 'Run Analyses':
+    - 'Discovery Environment':
+      - ds/de/index.md
+      - 'Metadata': ds/de/metadata.md
+      - 'DOI': ds/de/doi.md
+      - 'Data Use': ds/de/check_data.md
+      - 'Sharing with Teams': ds/de/teams.md
+    - 'GoCommands':
+      - ds/gocommands/index.md
+      - 'Installation and Upgrade': ds/gocommands/installation.md
+      - 'Configuration': ds/gocommands/configuration.md
+      - 'Data Management': ds/gocommands/data_management.md
+      - 'Data Transfer': ds/gocommands/data_transfer.md
+      - 'Access Management': ds/gocommands/access_management.md
+      - 'Metadata Management': ds/gocommands/metadata_management.md
+      - 'SFTP Public-key Authentication Configuration': ds/gocommands/sftp_public_key_auth.md
+      - 'Troubleshooting and Issue Report': ds/gocommands/issue_report.md
+    - 'iCommands':
+      - ds/icommands/index.md
+      - 'Installation': ds/icommands/installation.md
+      - 'Configuration': ds/icommands/configuration.md
+      - 'Data Management': ds/icommands/data_management.md
+      - 'Data Transfer': ds/icommands/data_transfer.md
+      - 'Access Management': ds/icommands/access_management.md
+      - 'Metadata Management': ds/icommands/metadata_management.md
+      - 'Troubleshooting and Issue Report': ds/icommands/issue_report.md
+    - 'SFTP':
+      - ds/sftp/index.md
+      - 'CLI tools': ds/sftp/cli.md
+      - 'FileZilla': ds/sftp/filezilla.md
+      - 'Cyberduck': ds/sftp/cyberduck.md
+      - 'Directory Structure': ds/sftp/structure.md
+      - 'Public-key Authentication Configuration': ds/sftp/public_key_auth.md
+    - 'WebDav':
+      - ds/webdav/index.md
+      - 'Web Browsers': ds/webdav/browser.md
+      - 'CLI tools': ds/webdav/cli.md
+      - 'File Managers': ds/webdav/file_manager.md
+      - 'Data Locations': ds/webdav/data_location.md
+  - 'Discovery Environment':
     - de/index.md
     - 'Logging In': de/login.md
     - 'Using Apps': de/using_apps.md
     - 'Managing Analyses': de/managing_analyses.md
-    - 'Interactive Analysis': vice/about.md
-    - 'Sharing and Using Bags': de/bags.md
-  - 'Quick Starts':
-    - 'RStudio in 6 steps': vice/quick-rstudio.md
-    - 'JupyterLab in 6 steps': vice/quick-jupyter.md
-    - 'Cloud Shell in 6 steps': vice/quick-cloudshell.md
-    - 'Distributing Data in 6 steps': ds/quick-data-share.md
-    - 'Sharing Apps Quick Start': vice/quick-app-launch.md
-    - 'Access Data in VICE Apps': vice/csi.md  
-  - 'Cloud Services':
-    - cloud/index.md
-  - 'Analyze Images':
-    - bisque/index.md
-  - 'For the Classroom':
-    - 'Teach using CyVerse': vice/teaching.md
-    - 'DNA Subway': dna_subway_guide.md
-  - 'Develop':
+    - 'Interactive Analysis': de/vice/about.md
     - 'Integrate Apps and Tools': de/create_apps.md
-    - 'Interactive Apps': vice/extend_apps.md
-    - 'Powered by CyVerse': powered_by.md
-    - 'Developer Manuals': manuals.md
-  - 'Science Tutorials':
-    - tutorials/index.md
-  - 'CyVerse Workshops':
-    - workshops/index.md
-    - 'Container Camp': workshops/container_camp.md
-    - 'Foundational Open Science Skills': workshops/foss.md
-  - 'Reference':
-    - 'Glossary': glossary.md
-    - 'FAQ': faq.md
+    - 'Integrate Interactive Apps': de/vice/extend_apps.md
+    - 'Data Store in Interactive Apps': de/vice/csi.md   
+    - 'Sharing Apps': de/vice/quick-app-launch.md
+    - 'Sharing and Using Bags': de/bags.md
+    - 'Sharing Data': ds/de/share.md
+    - 'Adding Metadata': ds/de/metadata.md
+    - 'Getting a DOI': ds/de/doi.md
+    - 'Checking Data Usage': ds/de/check_data.md
+    - 'Teams': ds/de/teams.md
+    - 'Quick Starts':
+      - 'RStudio': de/vice/quick-rstudio.md
+      - 'JupyterLab': de/vice/quick-jupyter.md
+      - 'Cloud Shell': de/vice/quick-cloudshell.md
+      - 'Ollama': de/vice/quick-ollama.md
+  - 'Cloud Native Services':
+    - cloud/index.md
+    - 'CACAO': cloud/cacao.md
+    - 'DataWatch': cloud/datawatch.md
+    - 'Harbor Container Registry': cloud/harbor.md
+  - 'Artificial Intelligence':
+    - ai/index.md
+    - 'VERDE': ai/verde.md
+    - 'MCP Servers': ai/mcp/index.md
+  - 'Education':
+    - edu/index.md
+    - 'Workshops':
+      - edu/workshops/index.md
+      - 'Container Camp': edu/workshops/container_camp.md
+      - 'Foundational Open Science Skills': edu/workshops/foss.md
+    - 'Science Tutorials': edu/tutorials/index.md
+    - 'DNA Subway': edu/tutorials/dna_subway_guide.md    
+  - 'Developer Tools':
+    - 'Developer Manuals': dev/manuals.md
+  
 
 # Theme settings
 theme:
   name: material
+  prev_next_buttons_location: bottom
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle: 
+        icon: material/brightness-auto
+        name: Switch to light mode
     # Light mode settings
     - media: "(prefers-color-scheme: light)"
       primary: '#002E99'
@@ -90,7 +128,7 @@ theme:
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to system preference
   font:
     text: Roboto
     code: 'Roboto Mono'
@@ -99,12 +137,19 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.indexes
+    #- navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.prune
+    #- navigation.tabs.sticky
+    #- navigation.indexes
     - navigation.top
+    - navigation.footer
     - toc.follow
+    - search.suggest
+    - search.highlight
     - content.code.copy
+    - content.tooltips
     - palette.toggle
 
 # Analytics and social links
@@ -154,8 +199,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
@@ -165,6 +210,7 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -178,6 +224,7 @@ markdown_extensions:
 # Plugins
 plugins:
   - search
+  - social
   - mkdocstrings
   - git-revision-date
   - mkdocs-jupyter:
